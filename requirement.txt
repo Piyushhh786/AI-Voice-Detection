@@ -1,8 +1,9 @@
 librosa
 openai-whisper
 numpy
-pandas
 fastapi
 uvicorn
 torch
 python-dotenv
+scikit-learn
+joblib
