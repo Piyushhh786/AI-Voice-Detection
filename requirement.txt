@@ -2,7 +2,6 @@ librosa
 openai-whisper
 numpy
 pandas
-matplotlib.pyplot
 fastapi
 uvicorn
 torch
