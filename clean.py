@@ -7,7 +7,7 @@ files = [
     f for f in os.listdir(clips_path)
     if os.path.isfile(os.path.join(clips_path, f))
 ]
-
+#
 num = len(files) - 50
 files_to_delete = random.sample(files,num)
 for file in files_to_delete:
