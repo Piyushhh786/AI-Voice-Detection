@@ -1,0 +1,5 @@
+librosa
+openai-whisper
+numpy
+pandas
+matplotlib.pyplot
