@@ -1,9 +1,9 @@
-librosa
-openai-whisper
-numpy
 fastapi
 uvicorn
-torch
-python-dotenv
+openai-whisper
+numpy
 scikit-learn
 joblib
+python-dotenv
+torch==2.1.0+cpu
+--extra-index-url https://download.pytorch.org/whl/cpu
