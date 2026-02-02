@@ -54,7 +54,7 @@ client = ElevenLabs(
 voices = ["CwhRBWXzGAHq8TQ4Fs17"]
 voices = ["FGY2WhTYpPnrIDTdsKH5"]
 for category,items in json.items():
-    i = 77
+    i = 0
     for text in items:
         for voice in voices:
           audio = client.text_to_speech.convert(
