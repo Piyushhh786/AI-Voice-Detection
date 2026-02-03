@@ -7,6 +7,8 @@ import tempfile
 import os
 import joblib
 
+
+
 device = "cuda" if torch.cuda.is_available() else "cpu"
 model = whisper.load_model("base").to(device)
 svm_model = joblib.load("models/whisper_svm_ai_vs_human.pkl")

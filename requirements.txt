@@ -1,6 +1,6 @@
 --extra-index-url https://download.pytorch.org/whl/cpu
 
-fastapi
+fastapi==0.128.0
 uvicorn
 openai-whisper
 numpy
