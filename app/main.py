@@ -5,6 +5,10 @@ from .inference import predict_voice
 
 app = FastAPI(title="AI-Generated Voice Detection API")
 
+@app.get("/")
+async def health_check():
+    return "The Health Check is Successful!"
+
 @app.post("/api/voice-detection", response_model=VoiceResponse)
 def voice_detection(
     req: VoiceRequest,
