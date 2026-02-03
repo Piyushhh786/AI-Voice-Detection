@@ -28,6 +28,7 @@ def predict_voice(base64_audio, svm_model=svm_model):
     audio = base64_to_wav(base64_audio)
     audio = whisper.pad_or_trim(audio)
     mel = whisper.log_mel_spectrogram(audio).to(model.device)
+    # print("torch version: ",torch.__version__)
     with torch.no_grad():
         emb = model.encoder(mel.unsqueeze(0))
 
