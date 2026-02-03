@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: ai-voice-detection
+    env: docker
+    plan: free
+    region: singapore # Use the slug 'oregon' instead of the full name
+    healthCheckPath: /
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.4
